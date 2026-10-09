@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Fathima Farha - Aspiring Software Developer & IT Student based in Sri Lanka specializing in Web Development, Software Engineering, and Database Management.">
+    <meta name="keywords" content="Fathima Farha, Software Developer, IT Student, Web Developer, Sri Lanka, HNDIT, Portfolio, C#, PHP, MySQL, JavaScript">
+    <meta name="author" content="Fathima Farha">
+    
+    <title>Fathima Farha | Aspiring Software Developer Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar-header" id="navbar">
+        <div class="container navbar-container">
+            <a href="#hero" class="brand-logo" id="brand-logo">
+                <span class="logo-initials">FF</span>
+                <span class="logo-text">Fathima <span class="accent-text">Farha</span></span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active" id="nav-link-hero">Home</a></li>
+                    <li><a href="#about" class="nav-link" id="nav-link-about">About</a></li>
+                    <li><a href="#education" class="nav-link" id="nav-link-education">Education</a></li>
+                    <li><a href="#skills" class="nav-link" id="nav-link-skills">Skills</a></li>
+                    <li><a href="#projects" class="nav-link" id="nav-link-projects">Projects</a></li>
+                    <li><a href="#experience" class="nav-link" id="nav-link-experience">Experience</a></li>
+                    <li><a href="#contact" class="nav-link" id="nav-link-contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle dark and light mode" title="Toggle Theme">
+                    <i class="fa-solid fa-moon moon-icon"></i>
+                    <i class="fa-solid fa-sun sun-icon"></i>
+                </button>
+
+                <button class="mobile-toggle-btn" id="mobile-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-bg-shapes">
+                <div class="shape blob-1"></div>
+                <div class="shape blob-2"></div>
+            </div>
+            
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        <span>Open to Internships & Opportunities</span>
+                    </div>
+
+                    <h1 class="hero-greeting">Hi, I'm <span class="highlight-name">Fathima Farha</span></h1>
+                    <h2 class="hero-subtitle">Aspiring Software Developer</h2>
+
+                    <p class="hero-description">
+                        An enthusiastic Information Technology student driven by a passion for building clean web applications, robust software solutions, efficient database management systems, and intuitive user interfaces.
+                    </p>
+
+                    <div class="hero-cta-group">
+                        <a href="#projects" class="btn btn-primary" id="btn-view-projects">
+                            <span>View My Projects</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary" id="btn-contact-me">
+                            <span>Contact Me</span>
+                            <i class="fa-regular fa-paper-plane"></i>
+                        </a>
+                        <button class="btn btn-outline" id="btn-download-cv">
+                            <i class="fa-solid fa-file-arrow-down"></i>
+                            <span>Download CV</span>
+                        </button>
+                    </div>
+
+                    <div class="hero-socials">
+                        <span class="socials-label">Connect with me:</span>
+                        <div class="social-links">
+                            <a href="https://github.com/fathimafarha2004" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub Profile" id="hero-github-link">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/fathima-farha-051205305" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn Profile" id="hero-linkedin-link">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="mailto:farahfouzan123456@gmail.com" class="social-icon" aria-label="Send Email" id="hero-email-link">
+                                <i class="fa-regular fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image-wrapper">
+                    <div class="image-frame-glow"></div>
+                    <div class="image-card">
+                        <!-- Replace profile.jpg with your photo -->
+                        <img src="profile.jpg" alt="Fathima Farha - Aspiring Software Developer" class="profile-photo" id="profile-photo" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop';">
+                        
+                        <div class="floating-badge badge-location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Sri Lanka</span>
+                        </div>
+
+                        <div class="floating-badge badge-field">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span>HNDIT Candidate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section class="about-section section-padding" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Get To Know Me</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card intro-card">
+                        <h3 class="card-title">Passionate IT Student & Developer</h3>
+                        <p class="about-text">
+                            Hello! I am <strong>Fathima Farha</strong>, an Information Technology student currently pursuing my Higher National Diploma in IT (HNDIT) in Sri Lanka. I enjoy transforming complex problems into simple, elegant, and user-friendly software solutions.
+                        </p>
+                        <p class="about-text">
+                            My journey in technology is driven by continuous learning and practical application. I actively engage in designing database architectures, building dynamic web applications, and creating desktop systems that deliver real-world value.
+                        </p>
+                        
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-code"></i>
+                                <div>
+                                    <h4>Practical Builder</h4>
+                                    <p>Developing functional projects with HTML, CSS, JS, PHP, and C#.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-database"></i>
+                                <div>
+                                    <h4>Database Design</h4>
+                                    <p>Structuring relational databases using MySQL & SQL Server LocalDB.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-laptop-code"></i>
+                                <div>
+                                    <h4>Clean UI Focus</h4>
+                                    <p>Crafting responsive, intuitive, and accessible user interfaces.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-card details-card">
+                        <h3 class="card-title">Quick Information</h3>
+                        <ul class="info-list">
+                            <li class="info-item">
+                                <span class="info-label"><i class="fa-solid fa-user"></i> Full Name:</span>
+                                <span class="info-value">Fathima Farha</span>
+                            </li>
+                            <li class="info-item">
+                                <span class="info-label"><i class="fa-solid fa-briefcase"></i> Role:</span>
+                                <span class="info-value">Aspiring Software Developer</span>
+                            </li>
+                            <li class="info-item">
+                                <span class="info-label"><i class="fa-solid fa-book-open"></i> Field:</span>
+                                <span class="info-value">Information Technology</span>
+                            </li>
+                            <li class="info-item">
+                                <span class="info-label"><i class="fa-solid fa-location-dot"></i> Location:</span>
+                                <span class="info-value">Sri Lanka</span>
+                            </li>
+                            <li class="info-item">
+                                <span class="info-label"><i class="fa-solid fa-graduation-cap"></i> Education:</span>
+                                <span class="info-value">HNDIT (2024 - 2026)</span>
+                            </li>
+                            <li class="info-item">
+                                <span class="info-label"><i class="fa-regular fa-envelope"></i> Email:</span>
+                                <span class="info-value text-truncate">farahfouzan123456@gmail.com</span>
+                            </li>
+                        </ul>
+
+                        <!-- Editable Placeholder for Career Goals -->
+                        <div class="career-goals-box">
+                            <h4 class="goals-title"><i class="fa-solid fa-bullseye"></i> Career Goals</h4>
+                            <p class="placeholder-text">
+                                [Editable Goal Placeholder]: Seeking a software engineering or web development internship where I can apply my HNDIT knowledge, contribute to real-world projects, and grow alongside an innovative development team.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Qualifications Section -->
+        <section class="education-section section-padding" id="education">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Academic Background</span>
+                    <h2 class="section-title">Education & Qualifications</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="timeline">
+                    <!-- Confirmed Qualification: HNDIT -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <span class="timeline-period">2024 — 2026 (Expected)</span>
+                                <span class="status-badge status-progress">In Progress</span>
+                            </div>
+                            <h3 class="qualification-title">Higher National Diploma in Information Technology (HNDIT)</h3>
+                            <h4 class="institution-name">
+                                <i class="fa-solid fa-building-columns"></i> SLIATE KURUNEGALA
+                            </h4>
+                            <p class="timeline-description">
+                                Comprehensive higher diploma program covering core software engineering principles, web application development, database management systems, system analysis, and object-oriented programming.
+                            </p>
+
+                            <div class="relevant-subjects">
+                                <h5><i class="fa-solid fa-book"></i> Relevant Modules & Topics:</h5>
+                                <div class="subject-tags">
+                                    <span class="tag">Web Development (HTML/CSS/JS/PHP)</span>
+                                    <span class="tag">Database Management (MySQL/SQL)</span>
+                                    <span class="tag">Object-Oriented Programming (C#)</span>
+                                    <span class="tag">System Analysis & Design</span>
+                                    <span class="tag">Data Structures & Algorithms</span>
+                                    <span class="tag">Software Engineering Principles</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Editable Secondary Education Placeholder -->
+                    <div class="timeline-item placeholder-timeline-item">
+                        <div class="timeline-marker">
+                            <i class="fa-solid fa-school"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <span class="timeline-period">[Start Year — End Year]</span>
+                                <span class="status-badge status-placeholder">Placeholder</span>
+                            </div>
+                            <h3 class="qualification-title">[Additional Qualification Name / G.C.E. Advanced Level]</h3>
+                            <h4 class="institution-name">
+                                <i class="fa-solid fa-building-columns"></i> [School / Institute Name]
+                            </h4>
+                            <p class="timeline-description">
+                                [Editable Description Placeholder]: Add details about secondary education, foundation diploma, or previous academic milestones here when needed.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section class="skills-section section-padding" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Core Competencies</span>
+                    <h2 class="section-title">Technical Skills</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Category 1 -->
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <div class="category-icon icon-code">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <h3>Programming & Web</h3>
+                        </div>
+                        <p class="category-desc">Languages and technologies used to build front-end interfaces and server-side web logic.</p>
+                        <div class="skill-badges">
+                            <span class="skill-badge"><i class="fa-brands fa-html5"></i> HTML5</span>
+                            <span class="skill-badge"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                            <span class="skill-badge"><i class="fa-brands fa-js"></i> JavaScript</span>
+                            <span class="skill-badge"><i class="fa-brands fa-php"></i> PHP</span>
+                            <span class="skill-badge"><i class="fa-solid fa-code"></i> C#</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 2 -->
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <div class="category-icon icon-db">
+                                <i class="fa-solid fa-database"></i>
+                            </div>
+                            <h3>Database Management</h3>
+                        </div>
+                        <p class="category-desc">Designing relational schemas, crafting SQL queries, and managing local and server databases.</p>
+                        <div class="skill-badges">
+                            <span class="skill-badge"><i class="fa-solid fa-server"></i> MySQL</span>
+                            <span class="skill-badge"><i class="fa-solid fa-database"></i> SQL Server LocalDB</span>
+                            <span class="skill-badge"><i class="fa-solid fa-diagram-project"></i> Database Design</span>
+                            <span class="skill-badge"><i class="fa-solid fa-table"></i> Relational Modeling</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 3 -->
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <div class="category-icon icon-tools">
+                                <i class="fa-solid fa-wrench"></i>
+                            </div>
+                            <h3>Developer Tools</h3>
+                        </div>
+                        <p class="category-desc">Environments and tools utilized for code editing, version control, and collaboration.</p>
+                        <div class="skill-badges">
+                            <span class="skill-badge"><i class="fa-brands fa-git-alt"></i> Git</span>
+                            <span class="skill-badge"><i class="fa-brands fa-github"></i> GitHub</span>
+                            <span class="skill-badge"><i class="fa-solid fa-code"></i> Visual Studio</span>
+                            <span class="skill-badge"><i class="fa-solid fa-terminal"></i> VS Code</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 4 -->
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <div class="category-icon icon-sdlc">
+                                <i class="fa-solid fa-gears"></i>
+                            </div>
+                            <h3>Software Engineering</h3>
+                        </div>
+                        <p class="category-desc">Methodologies and modeling techniques applied during the software development lifecycle.</p>
+                        <div class="skill-badges">
+                            <span class="skill-badge"><i class="fa-solid fa-list-check"></i> Requirements Analysis</span>
+                            <span class="skill-badge"><i class="fa-solid fa-sitemap"></i> ER & Use Case Diagrams</span>
+                            <span class="skill-badge"><i class="fa-solid fa-arrows-spin"></i> SDLC Fundamentals</span>
+                            <span class="skill-badge"><i class="fa-solid fa-file-code"></i> Technical Documentation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section section-padding" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Portfolio Showcase</span>
+                    <h2 class="section-title">Practical Projects</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card" id="project-elegance-wear">
+                        <div class="project-image-container">
+                            <div class="project-image-overlay"></div>
+                            <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=800&auto=format&fit=crop" alt="Elegance Wear Custom Tailoring Project" class="project-img">
+                            <span class="project-category-badge">Web Application</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Elegance Wear — Custom Tailoring Management</h3>
+                            <p class="project-description">
+                                A web application project focused on improving the management of custom tailoring orders. Planned features include customer and admin panels, dress and fabric selection, order tracking, payment options, delivery date estimation, and order status updates.
+                            </p>
+                            
+                            <div class="project-features">
+                                <h4>Key Features:</h4>
+                                <ul>
+                                    <li><i class="fa-solid fa-check"></i> Customer & Admin Management Panels</li>
+                                    <li><i class="fa-solid fa-check"></i> Dress style & fabric selection showcase</li>
+                                    <li><i class="fa-solid fa-check"></i> Order status updates & delivery estimation</li>
+                                    <li><i class="fa-solid fa-check"></i> Integrated measurement guide & order tracking</li>
+                                </ul>
+                            </div>
+
+                            <div class="project-tech-stack">
+                                <span class="tech-pill">HTML5</span>
+                                <span class="tech-pill">CSS3</span>
+                                <span class="tech-pill">JavaScript</span>
+                                <span class="tech-pill">PHP</span>
+                                <span class="tech-pill">MySQL</span>
+                            </div>
+
+                            <div class="project-actions">
+                                <button class="btn btn-sm btn-primary open-modal-btn" data-project="elegance-wear">
+                                    <i class="fa-solid fa-circle-info"></i> View Project
+                                </button>
+                                <a href="https://github.com/fathimafarha2004/Elegance-wear" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                                    <i class="fa-brands fa-github"></i> GitHub Repository
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card" id="project-coffee-shop">
+                        <div class="project-image-container">
+                            <div class="project-image-overlay"></div>
+                            <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=800&auto=format&fit=crop" alt="Coffee Shop Management System" class="project-img">
+                            <span class="project-category-badge">Desktop Application</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Coffee Shop Management System</h3>
+                            <p class="project-description">
+                                A desktop application project developed using C# Windows Forms and SQL Server LocalDB to practise interface development and database operations.
+                            </p>
+                            
+                            <div class="project-features">
+                                <h4>Key Features:</h4>
+                                <ul>
+                                    <li><i class="fa-solid fa-check"></i> Menu item catalog & price management</li>
+                                    <li><i class="fa-solid fa-check"></i> Point of Sale billing & order calculation</li>
+                                    <li><i class="fa-solid fa-check"></i> LocalDB SQL database CRUD transactions</li>
+                                    <li><i class="fa-solid fa-check"></i> Sales receipt generation & order summaries</li>
+                                </ul>
+                            </div>
+
+                            <div class="project-tech-stack">
+                                <span class="tech-pill">C#</span>
+                                <span class="tech-pill">Windows Forms</span>
+                                <span class="tech-pill">SQL Server LocalDB</span>
+                                <span class="tech-pill">.NET</span>
+                            </div>
+
+                            <div class="project-actions">
+                                <button class="btn btn-sm btn-primary open-modal-btn" data-project="coffee-shop">
+                                    <i class="fa-solid fa-circle-info"></i> View Details
+                                </button>
+                                <a href="https://github.com/fathimafarha2004" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                                    <i class="fa-brands fa-github"></i> GitHub Repository
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Reusable Future Project Placeholder -->
+                    <article class="project-card project-placeholder-card" id="project-placeholder">
+                        <div class="project-image-container">
+                            <div class="project-image-overlay"></div>
+                            <div class="placeholder-img-fallback">
+                                <i class="fa-solid fa-laptop-code"></i>
+                                <span>Future Project</span>
+                            </div>
+                            <span class="project-category-badge badge-upcoming">Upcoming</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">[Future Project Title Placeholder]</h3>
+                            <p class="project-description">
+                                [Editable Project Description]: Reusable card reserved for future web development, mobile application, or software engineering projects as technical skills expand.
+                            </p>
+                            
+                            <div class="project-features">
+                                <h4>Planned Highlights:</h4>
+                                <ul>
+                                    <li><i class="fa-solid fa-check"></i> Feature milestone 1</li>
+                                    <li><i class="fa-solid fa-check"></i> Feature milestone 2</li>
+                                    <li><i class="fa-solid fa-check"></i> Responsive interface & API connectivity</li>
+                                </ul>
+                            </div>
+
+                            <div class="project-tech-stack">
+                                <span class="tech-pill">HTML / CSS / JS</span>
+                                <span class="tech-pill">Database</span>
+                                <span class="tech-pill">Framework</span>
+                            </div>
+
+                            <div class="project-actions">
+                                <button class="btn btn-sm btn-secondary" disabled>
+                                    <i class="fa-solid fa-hourglass-half"></i> In Development
+                                </button>
+                                <a href="https://github.com/fathimafarha2004" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                                    <i class="fa-brands fa-github"></i> Profile Link
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications & Qualifications Section -->
+        <section class="certifications-section section-padding" id="certifications">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Learning & Credentials</span>
+                    <h2 class="section-title">Certifications & Training</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="certifications-grid">
+                    <!-- Certificate Placeholder 1 -->
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+                        <div class="cert-details">
+                            <span class="cert-date">[Date / Year]</span>
+                            <h3 class="cert-title">[Course or Certification Title]</h3>
+                            <p class="cert-issuer"><i class="fa-solid fa-award"></i> [Issuing Platform / Institution]</p>
+                            <p class="cert-desc">
+                                [Editable Certificate Description]: Space to add details regarding completed online courses, tech workshops, or certifications.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Certificate Placeholder 2 -->
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <div class="cert-details">
+                            <span class="cert-date">[Date / Year]</span>
+                            <h3 class="cert-title">[Workshop / Seminar Title]</h3>
+                            <p class="cert-issuer"><i class="fa-solid fa-award"></i> [Host Organization / Community]</p>
+                            <p class="cert-desc">
+                                [Editable Certificate Description]: Add details regarding developer workshops, bootcamps, or technical seminars attended.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience-section section-padding" id="experience">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Practical Exposure</span>
+                    <h2 class="section-title">Practical & Academic Experience</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="experience-grid">
+                    <!-- Academic Projects Card -->
+                    <div class="exp-card">
+                        <div class="exp-header">
+                            <div>
+                                <h3 class="exp-title">Academic & Hands-on Software Projects</h3>
+                                <span class="exp-subtitle">SLIATE Kurunegala • HNDIT Coursework</span>
+                            </div>
+                            <span class="exp-badge">2024 — Present</span>
+                        </div>
+                        <ul class="exp-bullets">
+                            <li>Developed functional web and desktop software applications as part of HNDIT practical coursework.</li>
+                            <li>Applied Software Development Life Cycle (SDLC) concepts, including requirement analysis, ER diagramming, and UI creation.</li>
+                            <li>Practiced version control, commit conventions, and repository hosting using Git & GitHub.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Internship Placeholder Card -->
+                    <div class="exp-card placeholder-exp-card">
+                        <div class="exp-header">
+                            <div>
+                                <h3 class="exp-title">[Software Engineering / IT Internship - Placeholder]</h3>
+                                <span class="exp-subtitle">[Company / Organization Name]</span>
+                            </div>
+                            <span class="exp-badge exp-badge-future">[Future Opportunity]</span>
+                        </div>
+                        <p class="exp-placeholder-text">
+                            [Editable Experience Placeholder]: This section is reserved for future software engineering internships, industry attachments, or developer positions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section section-padding" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Let's Connect</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info-card">
+                        <h3>Connect & Collaborate</h3>
+                        <p class="contact-intro">
+                            I am currently looking for software development internship opportunities and collaborative projects. Feel free to send a message or copy my email to connect!
+                        </p>
+
+                        <div class="contact-methods">
+                            <div class="contact-method-item">
+                                <div class="method-icon"><i class="fa-regular fa-envelope"></i></div>
+                                <div class="method-details">
+                                    <span class="method-label">Email Address</span>
+                                    <a href="mailto:farahfouzan123456@gmail.com" class="method-value" id="contact-email-text">farahfouzan123456@gmail.com</a>
+                                </div>
+                                <button class="copy-btn" id="copy-email-btn" title="Copy Email to Clipboard">
+                                    <i class="fa-regular fa-copy"></i>
+                                    <span class="copy-tooltip" id="copy-tooltip">Copy</span>
+                                </button>
+                            </div>
+
+                            <div class="contact-method-item">
+                                <div class="method-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="method-details">
+                                    <span class="method-label">Location</span>
+                                    <span class="method-value">Sri Lanka</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-method-item">
+                                <div class="method-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                                <div class="method-details">
+                                    <span class="method-label">LinkedIn</span>
+                                    <a href="https://www.linkedin.com/in/fathima-farha-051205305" target="_blank" rel="noopener noreferrer" class="method-value">fathima-farha-051205305</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-method-item">
+                                <div class="method-icon"><i class="fa-brands fa-github"></i></div>
+                                <div class="method-details">
+                                    <span class="method-label">GitHub</span>
+                                    <a href="https://github.com/fathimafarha2004" target="_blank" rel="noopener noreferrer" class="method-value">github.com/fathimafarha2004</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-card">
+                        <form id="portfolio-contact-form" class="contact-form" novalidate>
+                            <div class="form-notice">
+                                <i class="fa-solid fa-circle-info"></i>
+                                <span>Front-End Demo Form: Submitting validates input and displays a confirmation notification.</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-name">Your Name <span class="required">*</span></label>
+                                <input type="text" id="form-name" name="name" class="form-control" placeholder="e.g., Jane Doe" required>
+                                <span class="error-msg" id="error-name">Please enter your name.</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-email">Your Email <span class="required">*</span></label>
+                                <input type="email" id="form-email" name="email" class="form-control" placeholder="e.g., jane@example.com" required>
+                                <span class="error-msg" id="error-email">Please enter a valid email address.</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-subject">Subject <span class="required">*</span></label>
+                                <input type="text" id="form-subject" name="subject" class="form-control" placeholder="e.g., Internship Opportunity / Inquiry" required>
+                                <span class="error-msg" id="error-subject">Please enter a subject line.</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-message">Message <span class="required">*</span></label>
+                                <textarea id="form-message" name="message" rows="5" class="form-control" placeholder="Write your message here..." required></textarea>
+                                <span class="error-msg" id="error-message">Please enter your message.</span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block" id="btn-submit-form">
+                                <span>Send Message</span>
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#hero" class="footer-logo">Fathima <span class="accent-text">Farha</span></a>
+                <p class="footer-tagline">Aspiring Software Developer | Information Technology Student</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="footer-socials">
+                <a href="https://github.com/fathimafarha2004" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/fathima-farha-051205305" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:farahfouzan123456@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+
+            <div class="footer-copyright">
+                <p>&copy; <span id="copyright-year">2026</span> Fathima Farha. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Details Modal -->
+    <div class="modal-overlay" id="project-modal" aria-hidden="true">
+        <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">&times;</button>
+            <div class="modal-body" id="modal-body-content">
+                <!-- Dynamically populated by script.js -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast-container" id="toast-container">
+        <div class="toast" id="toast">
+            <i class="fa-solid fa-circle-check toast-icon" id="toast-icon"></i>
+            <span class="toast-message" id="toast-message">Action completed successfully!</span>
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
