@@ -234,20 +234,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 'Comprehensive database schema for tailoring workflows'
             ],
             github: 'https://github.com/fathimafarha2004/Elegance-wear'
-        },
-        'coffee-shop': {
-            title: 'Coffee Shop Management System',
-            category: 'Desktop Application',
-            image: 'https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=800&auto=format&fit=crop',
-            description: 'A desktop application project developed using C# Windows Forms and SQL Server LocalDB to practise interface development and database operations.',
-            tech: ['C#', 'Windows Forms', 'SQL Server LocalDB', '.NET Framework'],
-            features: [
-                'Point of Sale (POS) checkout interface with instant item calculation',
-                'Menu catalog management (Add, Update, Delete beverage items)',
-                'LocalDB integration for persistent sales transactions and bill history',
-                'Simple reporting view for daily sales summary'
-            ],
-            github: 'https://github.com/fathimafarha2004'
         }
     };
 

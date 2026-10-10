@@ -1016,7 +1016,8 @@ ul {
    -------------------------------------------------------------------------- */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 580px));
+    justify-content: center;
     gap: 2rem;
 }
 
