@@ -221,17 +221,17 @@ document.addEventListener('DOMContentLoaded', () => {
        -------------------------------------------------------------------------- */
     const projectData = {
         'elegance-wear': {
-            title: 'Elegance Wear — Custom Tailoring Management Website',
-            category: 'Web Application',
+            title: 'Elegance Wear — Custom Tailoring Management System',
+            category: 'Full-Stack Web Application',
             image: 'https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=800&auto=format&fit=crop',
-            description: 'A web application project focused on improving the management of custom tailoring orders. Planned features include customer and admin panels, dress and fabric selection, order tracking, payment options, delivery date estimation, and order status updates.',
-            tech: ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'MySQL'],
+            description: 'A modern full-stack web application designed to simplify dress customization, fabric selection, tailoring order management, delivery tracking, and customer communication with dedicated customer and admin panels.',
+            tech: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Node.js', 'Prisma ORM'],
             features: [
                 'Customer dashboard for selecting fabric styles and submitting custom measurements',
                 'Admin management portal for order status updates & client communication',
-                'Delivery date estimation algorithm based on tailor workload',
-                'Interactive dress catalog and fabric selection showcase',
-                'Comprehensive database schema for tailoring workflows'
+                'Delivery date estimation and order tracking throughout the tailoring process',
+                'Modern responsive interface built with Next.js, React, and Tailwind CSS',
+                'Robust backend architecture with Node.js, TypeScript, and Prisma ORM'
             ],
             github: 'https://github.com/fathimafarha2004/Elegance-wear'
         }
