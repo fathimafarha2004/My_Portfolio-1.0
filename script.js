@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
        5. COPY EMAIL TO CLIPBOARD
        -------------------------------------------------------------------------- */
     const copyEmailBtn = document.getElementById('copy-email-btn');
-    const emailText = 'farahfouzan123456@gmail.com';
+    const emailText = 'fathimafarha0126@gmail.com';
 
     if (copyEmailBtn) {
         copyEmailBtn.addEventListener('click', async () => {

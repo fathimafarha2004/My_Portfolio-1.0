@@ -77,5 +77,5 @@
 
 - 🐙 **GitHub:** [@fathimafarha2004](https://github.com/fathimafarha2004)
 - 💼 **LinkedIn:** [fathima-farha](https://www.linkedin.com/in/fathima-farha-051205305)
-- ✉️ **Email:** farahfouzan123456@gmail.com
+- ✉️ **Email:** fathimafarha0126@gmail.com
 - 📍 **Location:** Sri Lanka
