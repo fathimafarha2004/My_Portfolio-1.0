@@ -1016,9 +1016,11 @@ ul {
    -------------------------------------------------------------------------- */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 580px));
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     justify-content: center;
     gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .project-card {
