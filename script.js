@@ -234,6 +234,22 @@ document.addEventListener('DOMContentLoaded', () => {
                 'Robust backend architecture with Node.js, TypeScript, and Prisma ORM'
             ],
             github: 'https://github.com/fathimafarha2004/Elegance-wear'
+        },
+        'tuition-management': {
+            title: 'Tuition Management System',
+            category: 'Desktop Management Application',
+            image: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800&auto=format&fit=crop',
+            description: 'A comprehensive management software developed to streamline operations for tuition institutes and educators. The application digitizes student enrollments, subject and batch allocations, fee tracking, and reporting with an intuitive user interface and relational database storage.',
+            tech: ['C#', '.NET', 'Windows Forms', 'SQL Server LocalDB / MySQL', 'Data Reporting'],
+            features: [
+                'Student registration and profile management with automated student ID assignment',
+                'Batch and subject scheduling with tutor allocation',
+                'Monthly fee collection system with instant payment receipts and arrears tracking',
+                'Daily attendance recording and attendance summary reports',
+                'Search and filter capabilities to quickly retrieve student records and payment history',
+                'Relational database architecture ensuring data integrity and fast queries'
+            ],
+            github: 'https://github.com/fathimafarha2004/tuition-'
         }
     };
 
